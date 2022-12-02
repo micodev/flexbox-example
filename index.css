@@ -1,0 +1,226 @@
+body,html{
+ margin: 0;
+ padding: 0;
+ min-height: 100%;
+ background-color:  rgb(235, 247, 250);
+ font-family: 'Markazi Text', serif;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.logo > img{
+    width: 20px;
+    height: 20px;
+}
+.logo{
+    justify-content: space-evenly;
+    flex: 0.1 auto;
+}
+.logo,.nav,.left-side,.right-side,.nav-links,.body{
+    display:flex;
+}
+.body{
+    flex-direction: column;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav{
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    background-color: white;
+}
+.nav-links{
+   color: rgb(139, 138, 138);
+}
+.nav-links > .active{
+    color: rgb(81, 81, 81)
+}
+.left-side{
+    justify-content: space-evenly;
+    flex: 0.1 auto;
+}
+.nav-links{
+    justify-content: space-evenly;
+    flex: 0.5 auto;
+}
+.right-side{
+    justify-content: space-evenly;
+    flex: 0.05 auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+}
+.header > *{
+    margin: 0;
+   
+}
+
+
+
+.login {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.get-started{
+    background-color: rgb(39, 229, 191);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    gap: 15px;
+}
+.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(206, 206, 206, 0.104);
+    border-radius: 10px;
+    flex: 0.05 auto;
+    background-color: rgb(255, 255, 255);
+}
+.upper-part{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0.05 auto;
+    padding:20px;
+    
+}
+
+.card-title-2{
+    font-size: 10px;
+    margin-top: 0;
+    color: rgb(184, 184, 184);
+}
+.card-title-1{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.plan-price > span:nth-child(1){
+    color: rgb(219, 219, 219);
+}
+.plan-price > span:nth-child(1),.plan-price > span:nth-child(2){
+    font-size: 60px;
+}
+.plan-price > span:nth-child(3){
+    color: rgb(219, 219, 219);
+    font-size:10px;
+}
+.try-button{
+    background-color: rgb(39, 191, 229);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.gap{
+    margin-bottom: 20px;
+}
+.included{
+    margin-bottom: 10px;
+}
+.feature-item{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.feature-item > i{
+    color: rgb(39, 229, 191);
+    margin-right: 5px;
+}
+.feature-item > span{
+    color: rgb(139, 138, 138);
+}
+.see-all-features{
+    background-color: rgb(249, 249, 249);
+    color: rgb(89, 89, 89);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 0.05 auto;
+    padding:10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* media for mobile */
+@media screen and (max-width: 768px) {
+    .card-item{
+        
+        flex-grow: 1;
+    }
+     .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+  .left-side{
+         margin-bottom: 10px;
+         gap: 5px;
+   }
+   .nav-links{
+         align-items: center;
+         gap: 5px;
+   }
+    .right-side{
+            gap: 5px;
+        }
+    
+   
+    .card-item > .upper-part{
+        padding: 10px;
+    }
+    .card-item > .upper-part > .card-title-1{
+        font-size: 15px;
+    }
+    .card-item > .upper-part > .card-title-2{
+        font-size: 8px;
+    }
+    .card-item > .upper-part > .plan-price > span:nth-child(1),.card-item > .upper-part > .plan-price > span:nth-child(2){
+        font-size: 40px;
+    }
+    .card-item > .upper-part > .plan-price > span:nth-child(3){
+        font-size: 8px;
+    }
+    .card-item > .upper-part > .try-button{
+        padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    }
+    .card-item > .upper-part > .gap{
+        margin-bottom: 10px;
+    }
+    .card-item > .upper-part > .included{
+        margin-bottom: 5px;
+    }
+    .card-item > .upper-part > .feature-item{
+        font-size: 10px;
+    }
+    .card-item > .upper-part > .feature-item > i{
+        margin-right: 3px;
+    }
+    .card-item > .upper-part > .feature-item > span{
+        margin-right: 3px;
+    }
+    .card-item > .upper-part > .see-all-features{
+        padding: 5px 10px;
+    }
+}
